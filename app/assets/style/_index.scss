@@ -4,17 +4,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 80px;
+
     li {
         width: calc((100% - 48px) / 3);
         // width: 416px;
         border: 1px solid #F2F2F2;
         border-radius: 10px;
     }
-
+}
+.banner{
+    overflow: hidden;
     img {
         max-width: 100%;
         height: auto;
-        border-radius: 10px 10px 0px 0px;
+        // border-radius: 10px 10px 0px 0px;
+        transition: .5s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -46,6 +53,7 @@
     display: flex;
     justify-content: space-between;
 }
-.br{
+
+.br {
     line-height: 48px
 }

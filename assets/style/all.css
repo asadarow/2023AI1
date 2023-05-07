@@ -102,10 +102,19 @@ p {
     width: calc((100% - 48px) / 3);
     border: 1px solid #F2F2F2;
     border-radius: 10px; }
-  .list img {
+
+.banner {
+  overflow: hidden; }
+  .banner img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px 10px 0px 0px; }
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .banner img:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
 
 .intro {
   padding: 20px 32px;

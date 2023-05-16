@@ -7,17 +7,18 @@
 
     li {
         width: calc((100% - 48px) / 3);
-        // width: 416px;
         border: 1px solid #F2F2F2;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
     }
 }
 .banner{
     overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
     img {
         max-width: 100%;
         height: auto;
-        // border-radius: 10px 10px 0px 0px;
         transition: .5s;
         &:hover {
             transform: scale(1.2);
@@ -28,7 +29,7 @@
 .intro {
     padding: 20px 32px;
     border-bottom: 1px solid #F2F2F2;
-
+    flex-grow: 1;
     h2 {
         margin-bottom: 12px;
         line-height: 24px;
@@ -54,6 +55,3 @@
     justify-content: space-between;
 }
 
-.br {
-    line-height: 48px
-}

@@ -101,10 +101,18 @@ p {
   .list li {
     width: calc((100% - 48px) / 3);
     border: 1px solid #F2F2F2;
-    border-radius: 10px; }
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .banner {
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px; }
   .banner img {
     max-width: 100%;
     height: auto;
@@ -118,7 +126,10 @@ p {
 
 .intro {
   padding: 20px 32px;
-  border-bottom: 1px solid #F2F2F2; }
+  border-bottom: 1px solid #F2F2F2;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
   .intro h2 {
     margin-bottom: 12px;
     line-height: 24px; }
@@ -145,8 +156,5 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.br {
-  line-height: 48px; }
 
 /*# sourceMappingURL=all.css.map */
